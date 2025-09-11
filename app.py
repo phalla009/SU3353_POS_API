@@ -7,8 +7,8 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
-
 import model
+
 @app.route('/')
 def hello_world():  # put application's code here
     return 'Hello World!'
